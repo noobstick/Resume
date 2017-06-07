@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./app.module.js"],"names":[],"mappings":";;;;;;;AAAA;;AAEA,2B","file":"app.bundle.js","sourcesContent":["import angular from 'angular';\r\n\r\nangular.module('app', []);\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./app.module.js\n// module id = 0\n// module chunks = 0"],"sourceRoot":""}

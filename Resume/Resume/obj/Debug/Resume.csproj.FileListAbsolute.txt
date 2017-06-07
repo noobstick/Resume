@@ -38,3 +38,4 @@ C:\develop\Resume\Resume\Resume\bin\System.Web.Http.xml
 C:\develop\Resume\Resume\Resume\bin\System.Web.Http.WebHost.xml
 C:\develop\Resume\Resume\Resume\obj\Debug\Resume.dll
 C:\develop\Resume\Resume\Resume\obj\Debug\Resume.pdb
+C:\develop\Resume\Resume\Resume\obj\Debug\Resume.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+﻿<button type="button" class="btn btn-primary">Button Test</button>
+<h1>{{ $ctrl.name }}</h1>
+<button ng-click="$ctrl.updateTitle()">Update Title</button>
+
+<p class="form-group">
+    <label>Define your format</label>
+    <input type="text" ng-model="$ctrl.format" class="form-control">
+</p>
+
+<p class="form-group">
+    <label>Result</label>
+    <input type="text" class="form-control" uib-datepicker-popup="{{$ctrl.format}}" ng-model="$ctrl.date" />
+</p>
