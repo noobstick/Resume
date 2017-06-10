@@ -117,6 +117,10 @@
     <Content Include="app\layout\header\header.html" />
     <Content Include="app\layout\header\header.module.js" />
     <Content Include="app\layout\layout.module.js" />
+    <Content Include="app\layout\navigation\navigation.component.js" />
+    <Content Include="app\layout\navigation\navigation.controller.js" />
+    <Content Include="app\layout\navigation\navigation.html" />
+    <Content Include="app\layout\navigation\navigation.module.js" />
     <Content Include="assets\css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -147,6 +151,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\core\" />
     <Folder Include="App_Data\" />
     <Folder Include="assets\js\" />
     <Folder Include="Controllers\" />

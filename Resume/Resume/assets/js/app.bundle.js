@@ -15,9 +15,7 @@ function headerCtrl(uibDateParser) {
 
     var $ctrl = this;
 
-    $ctrl.name = "Yo bruh";
-    $ctrl.format = 'yyyy/MM/dd';
-    $ctrl.date = new Date();
+    $ctrl.name = "Resume";
 
     $ctrl.updateTitle = function () {
         $ctrl.name = $ctrl.title;
@@ -28,13 +26,32 @@ function headerCtrl(uibDateParser) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(4);
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = navigationCtrl;
+function navigationCtrl() {
+    'ngInject';
+
+    var $ctrl = this;
+
+    $ctrl.name = "Nav Section";
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(5);
 
 module.exports = 'ui.bootstrap';
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44,16 +61,20 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _header = __webpack_require__(8);
+var _header = __webpack_require__(9);
 
 var _header2 = _interopRequireDefault(_header);
 
+var _navigation = __webpack_require__(11);
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = angular.module('layout', [_header2.default]).name;
+exports.default = angular.module('layout', [_header2.default, _navigation2.default]).name;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*
@@ -7834,8 +7855,8 @@ angular.module('ui.bootstrap.timepicker').run(function() {!angular.$$csp().noInl
 angular.module('ui.bootstrap.typeahead').run(function() {!angular.$$csp().noInlineStyle && !angular.$$uibTypeaheadCss && angular.element(document).find('head').prepend('<style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style>'); angular.$$uibTypeaheadCss = true; });
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7845,11 +7866,11 @@ var _angular = __webpack_require__(0);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _layout = __webpack_require__(3);
+var _layout = __webpack_require__(4);
 
 var _layout2 = _interopRequireDefault(_layout);
 
-var _angularUiBootstrap = __webpack_require__(2);
+var _angularUiBootstrap = __webpack_require__(3);
 
 var _angularUiBootstrap2 = _interopRequireDefault(_angularUiBootstrap);
 
@@ -7858,7 +7879,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _angular2.default.module('app', [_angularUiBootstrap2.default, _layout2.default]);
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7869,7 +7890,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.headerComponent = undefined;
 
-var _header = __webpack_require__(9);
+var _header = __webpack_require__(12);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -7889,7 +7910,7 @@ var headerComponent = exports.headerComponent = {
 };
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7899,7 +7920,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _header = __webpack_require__(7);
+var _header = __webpack_require__(8);
 
 var _header2 = __webpack_require__(1);
 
@@ -7910,10 +7931,65 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = angular.module('layout.header', []).controller('headerCtrl', _header3.default).component('lzHeader', _header.headerComponent).name;
 
 /***/ }),
-/* 9 */
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.navigationComponent = undefined;
+
+var _navigation = __webpack_require__(13);
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+var _navigation3 = __webpack_require__(2);
+
+var _navigation4 = _interopRequireDefault(_navigation3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var navigationComponent = exports.navigationComponent = {
+    bindings: {},
+    template: _navigation2.default,
+    controller: _navigation4.default
+};
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _navigation = __webpack_require__(10);
+
+var _navigation2 = __webpack_require__(2);
+
+var _navigation3 = _interopRequireDefault(_navigation2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = angular.module('layout.navigation', []).controller('navigationCtrl', _navigation3.default).component('lzNavigation', _navigation.navigationComponent).name;
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" class=\"btn btn-primary\">Button Test</button>\r\n<h1>{{ $ctrl.name }}</h1>\r\n<button ng-click=\"$ctrl.updateTitle()\">Update Title</button>\r\n\r\n<p class=\"form-group\">\r\n    <label>Define your format</label>\r\n    <input type=\"text\" ng-model=\"$ctrl.format\" class=\"form-control\">\r\n</p>\r\n\r\n<p class=\"form-group\">\r\n    <label>Result</label>\r\n    <input type=\"text\" class=\"form-control\" uib-datepicker-popup=\"{{$ctrl.format}}\" ng-model=\"$ctrl.date\" />\r\n</p>\r\n";
+module.exports = "\r\n<h1>{{ $ctrl.name }}</h1>\r\n\r\n";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>{{$ctrl.name}}</h1>";
 
 /***/ })
-],[6]);
+],[7]);

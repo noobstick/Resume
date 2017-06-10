@@ -3,9 +3,7 @@
 
     var $ctrl = this;
 
-    $ctrl.name = "Yo bruh";
-    $ctrl.format = 'yyyy/MM/dd';
-    $ctrl.date = new Date();
+    $ctrl.name = "Resume";
 
     $ctrl.updateTitle = function(){
         $ctrl.name = $ctrl.title;
