@@ -117,6 +117,9 @@
     <Content Include="app\layout\header\header.html" />
     <Content Include="app\layout\header\header.module.js" />
     <Content Include="app\layout\layout.module.js" />
+    <Content Include="app\layout\navigation\contact\contact.config.route.js" />
+    <Content Include="app\layout\navigation\contact\contact.html" />
+    <Content Include="app\layout\navigation\contact\contact.module.js" />
     <Content Include="app\layout\navigation\navigation.component.js" />
     <Content Include="app\layout\navigation\navigation.controller.js" />
     <Content Include="app\layout\navigation\navigation.html" />

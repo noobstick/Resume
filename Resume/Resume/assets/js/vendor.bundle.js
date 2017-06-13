@@ -150,29 +150,29 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 102);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
+/***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(6);
+module.exports = __webpack_require__(11);
+
+
+/***/ }),
+
+/***/ 11:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(92);
 module.exports = angular;
 
 
 /***/ }),
 
-/***/ 14:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-
-/***/ 6:
+/***/ 92:
 /***/ (function(module, exports) {
 
 /**
