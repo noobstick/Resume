@@ -36,5 +36,6 @@ C:\develop\Resume\Resume\Resume\bin\Newtonsoft.Json.xml
 C:\develop\Resume\Resume\Resume\bin\System.Net.Http.Formatting.xml
 C:\develop\Resume\Resume\Resume\bin\System.Web.Http.xml
 C:\develop\Resume\Resume\Resume\bin\System.Web.Http.WebHost.xml
+C:\develop\Resume\Resume\Resume\obj\Debug\Resume.csprojResolveAssemblyReference.cache
 C:\develop\Resume\Resume\Resume\obj\Debug\Resume.dll
 C:\develop\Resume\Resume\Resume\obj\Debug\Resume.pdb

@@ -3,12 +3,15 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <lz-header title="test"></lz-header>
     <script src="assets/js/vendor.bundle.js"></script>
     <script src="assets/js/app.bundle.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
-<body>
-    <lz-navigation></lz-navigation>
+<body layout="column">
+    <lz-header></lz-header>
+    <lz-navigation layout="row"></lz-navigation>
+    <ui-view layout="column"></ui-view>
     <p>Hello World</p>
 </body>
 </html>

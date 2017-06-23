@@ -12,7 +12,9 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-bootstrap": "^2.5.0",
-    "angular-ui-router": "^1.0.3"
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

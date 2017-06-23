@@ -150,12 +150,21 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 102);
+/******/ 	return __webpack_require__(__webpack_require__.s = 111);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 102:
+/***/ 11:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(95);
+module.exports = angular;
+
+
+/***/ }),
+
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(11);
@@ -163,16 +172,7 @@ module.exports = __webpack_require__(11);
 
 /***/ }),
 
-/***/ 11:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(92);
-module.exports = angular;
-
-
-/***/ }),
-
-/***/ 92:
+/***/ 95:
 /***/ (function(module, exports) {
 
 /**

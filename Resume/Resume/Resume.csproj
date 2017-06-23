@@ -117,14 +117,24 @@
     <Content Include="app\layout\header\header.html" />
     <Content Include="app\layout\header\header.module.js" />
     <Content Include="app\layout\layout.module.js" />
-    <Content Include="app\layout\navigation\contact\contact.config.route.js" />
+    <Content Include="app\layout\navigation\about\about.component.js" />
+    <Content Include="app\layout\navigation\about\about.controller.js" />
+    <Content Include="app\layout\navigation\about\about.html" />
+    <Content Include="app\layout\navigation\about\about.module.js" />
+    <Content Include="app\layout\navigation\contact\contact.component.js" />
+    <Content Include="app\layout\navigation\contact\contact.controller.js" />
     <Content Include="app\layout\navigation\contact\contact.html" />
     <Content Include="app\layout\navigation\contact\contact.module.js" />
     <Content Include="app\layout\navigation\navigation.component.js" />
     <Content Include="app\layout\navigation\navigation.controller.js" />
     <Content Include="app\layout\navigation\navigation.html" />
     <Content Include="app\layout\navigation\navigation.module.js" />
+    <Content Include="app\widget\constants\constants.module.js" />
+    <Content Include="app\widget\constants\states\states.constants.js" />
+    <Content Include="app\widget\constants\states\states.module.js" />
+    <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Web.config">
@@ -146,6 +156,10 @@
     </Content>
     <Content Include="package.json" />
     <Content Include=".babelrc" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
