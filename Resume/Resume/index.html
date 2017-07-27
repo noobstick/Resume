@@ -9,9 +9,11 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body layout="column">
-    <lz-header></lz-header>
+    <!--<lz-header></lz-header>-->
     <lz-navigation layout="row"></lz-navigation>
-    <ui-view layout="column"></ui-view>
-    <p>Hello World</p>
+    <lz-home></lz-home>
+    <lz-contact></lz-contact>
+    <lz-about></lz-about>
+    <ui-view ng-cloak layout="column"></ui-view>
 </body>
 </html>

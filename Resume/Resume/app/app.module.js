@@ -12,7 +12,13 @@ angular.module('app', [
     layout,
     widgets
 ]).config(function($stateProvider){
+
     var states = [
+        {
+            name: 'Home',
+            url: '/',
+            component: 'lzHome'
+        },
         {
             name: 'Contact',
             url: '/contact',

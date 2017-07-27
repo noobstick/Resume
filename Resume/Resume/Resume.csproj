@@ -125,6 +125,10 @@
     <Content Include="app\layout\navigation\contact\contact.controller.js" />
     <Content Include="app\layout\navigation\contact\contact.html" />
     <Content Include="app\layout\navigation\contact\contact.module.js" />
+    <Content Include="app\layout\navigation\home\home.component.js" />
+    <Content Include="app\layout\navigation\home\home.controller.js" />
+    <Content Include="app\layout\navigation\home\home.html" />
+    <Content Include="app\layout\navigation\home\home.module.js" />
     <Content Include="app\layout\navigation\navigation.component.js" />
     <Content Include="app\layout\navigation\navigation.controller.js" />
     <Content Include="app\layout\navigation\navigation.html" />
@@ -144,6 +148,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\MailController.cs" />
+    <Compile Include="Controllers\RestBase\RestBaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,7 +177,6 @@
     <Folder Include="app\core\" />
     <Folder Include="App_Data\" />
     <Folder Include="assets\js\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

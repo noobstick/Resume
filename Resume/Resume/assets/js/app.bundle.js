@@ -987,17 +987,17 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(17));
-__export(__webpack_require__(76));
 __export(__webpack_require__(77));
 __export(__webpack_require__(78));
 __export(__webpack_require__(79));
 __export(__webpack_require__(80));
 __export(__webpack_require__(81));
-__export(__webpack_require__(85));
+__export(__webpack_require__(82));
+__export(__webpack_require__(86));
 __export(__webpack_require__(31));
 __export(__webpack_require__(36));
-__export(__webpack_require__(82));
-__export(__webpack_require__(75));
+__export(__webpack_require__(83));
+__export(__webpack_require__(76));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -4568,21 +4568,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var interface_1 = __webpack_require__(9);
 var transition_1 = __webpack_require__(20);
 var hookRegistry_1 = __webpack_require__(27);
-var coreResolvables_1 = __webpack_require__(66);
-var redirectTo_1 = __webpack_require__(70);
-var onEnterExitRetain_1 = __webpack_require__(69);
-var resolve_1 = __webpack_require__(71);
-var views_1 = __webpack_require__(74);
-var updateGlobals_1 = __webpack_require__(72);
-var url_1 = __webpack_require__(73);
+var coreResolvables_1 = __webpack_require__(67);
+var redirectTo_1 = __webpack_require__(71);
+var onEnterExitRetain_1 = __webpack_require__(70);
+var resolve_1 = __webpack_require__(72);
+var views_1 = __webpack_require__(75);
+var updateGlobals_1 = __webpack_require__(73);
+var url_1 = __webpack_require__(74);
 var lazyLoad_1 = __webpack_require__(32);
 var transitionEventType_1 = __webpack_require__(43);
 var transitionHook_1 = __webpack_require__(14);
 var predicates_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var ignoredTransition_1 = __webpack_require__(67);
-var invalidTransition_1 = __webpack_require__(68);
+var ignoredTransition_1 = __webpack_require__(68);
+var invalidTransition_1 = __webpack_require__(69);
 /**
  * The default [[Transition]] options.
  *
@@ -4820,10 +4820,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular_1 = __webpack_require__(10);
 var core_1 = __webpack_require__(4);
 var views_1 = __webpack_require__(30);
-var templateFactory_1 = __webpack_require__(93);
+var templateFactory_1 = __webpack_require__(94);
 var stateProvider_1 = __webpack_require__(56);
-var onEnterExitRetain_1 = __webpack_require__(92);
-var locationServices_1 = __webpack_require__(90);
+var onEnterExitRetain_1 = __webpack_require__(93);
+var locationServices_1 = __webpack_require__(91);
 var urlRouterProvider_1 = __webpack_require__(57);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
@@ -8725,8 +8725,6 @@ function headerCtrl(uibDateParser) {
 
     var $ctrl = this;
 
-    $ctrl.name = "Resume";
-
     $ctrl.updateTitle = function () {
         $ctrl.name = $ctrl.title;
     };
@@ -8778,6 +8776,21 @@ function contactCtrl() {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.default = homeCtrl;
+function homeCtrl() {
+    'ngInject';
+}
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.default = navigationCtrl;
 function navigationCtrl($state, states) {
     'ngInject';
@@ -8791,16 +8804,16 @@ function navigationCtrl($state, states) {
 };
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(86);
+__webpack_require__(87);
 
 module.exports = 'ui.bootstrap';
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8820,36 +8833,13 @@ __export(__webpack_require__(29));
 __export(__webpack_require__(30));
 __export(__webpack_require__(56));
 __export(__webpack_require__(57));
-__webpack_require__(89);
-__webpack_require__(87);
-__webpack_require__(91);
+__webpack_require__(90);
 __webpack_require__(88);
-__webpack_require__(94);
+__webpack_require__(92);
+__webpack_require__(89);
+__webpack_require__(95);
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _header = __webpack_require__(98);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _navigation = __webpack_require__(104);
-
-var _navigation2 = _interopRequireDefault(_navigation);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = angular.module('layout', [_header2.default, _navigation2.default]).name;
 
 /***/ }),
 /* 65 */
@@ -8862,7 +8852,30 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _states = __webpack_require__(106);
+var _header = __webpack_require__(99);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _navigation = __webpack_require__(107);
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = angular.module('layout', [_header2.default, _navigation2.default]).name;
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _states = __webpack_require__(109);
 
 var _states2 = _interopRequireDefault(_states);
 
@@ -8871,7 +8884,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = angular.module('widget.constants', [_states2.default]).name;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8895,7 +8908,7 @@ exports.registerAddCoreResolvables = function (transitionService) {
 //# sourceMappingURL=coreResolvables.js.map
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8932,7 +8945,7 @@ exports.registerIgnoredTransitionHook = function (transitionService) {
 //# sourceMappingURL=ignoredTransition.js.map
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8957,7 +8970,7 @@ exports.registerInvalidTransitionHook = function (transitionService) {
 //# sourceMappingURL=invalidTransition.js.map
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9020,7 +9033,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9063,7 +9076,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9112,7 +9125,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9153,7 +9166,7 @@ exports.registerUpdateGlobalState = function (transitionService) {
 //# sourceMappingURL=updateGlobals.js.map
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9184,7 +9197,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9237,7 +9250,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9264,7 +9277,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9280,7 +9293,7 @@ __export(__webpack_require__(24));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9295,7 +9308,7 @@ __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9311,7 +9324,7 @@ __export(__webpack_require__(19));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9330,7 +9343,7 @@ __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9364,7 +9377,7 @@ __export(__webpack_require__(28));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9381,7 +9394,7 @@ __export(__webpack_require__(47));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9395,11 +9408,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-__export(__webpack_require__(83));
+__export(__webpack_require__(84));
 //# sourceMappingURL=vanilla.js.map
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9417,11 +9430,11 @@ __export(__webpack_require__(53));
 __export(__webpack_require__(51));
 __export(__webpack_require__(48));
 __export(__webpack_require__(15));
-__export(__webpack_require__(84));
+__export(__webpack_require__(85));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9456,7 +9469,7 @@ exports.memoryLocationPlugin = utils_1.locationPluginFactory("vanilla.memoryLoca
 //# sourceMappingURL=plugins.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9469,7 +9482,7 @@ __export(__webpack_require__(55));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports) {
 
 /*
@@ -17250,7 +17263,7 @@ angular.module('ui.bootstrap.timepicker').run(function() {!angular.$$csp().noInl
 angular.module('ui.bootstrap.typeahead').run(function() {!angular.$$csp().noInlineStyle && !angular.$$uibTypeaheadCss && angular.element(document).find('head').prepend('<style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style>'); angular.$$uibTypeaheadCss = true; });
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17827,7 +17840,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18123,7 +18136,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18497,7 +18510,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18578,7 +18591,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18630,7 +18643,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18661,7 +18674,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18861,7 +18874,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18890,8 +18903,8 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 95 */,
-/* 96 */
+/* 96 */,
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18901,26 +18914,31 @@ var _angular = __webpack_require__(11);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _angularUiBootstrap = __webpack_require__(62);
+var _angularUiBootstrap = __webpack_require__(63);
 
 var _angularUiBootstrap2 = _interopRequireDefault(_angularUiBootstrap);
 
-var _angularUiRouter = __webpack_require__(63);
+var _angularUiRouter = __webpack_require__(64);
 
 var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
-var _layout = __webpack_require__(64);
+var _layout = __webpack_require__(65);
 
 var _layout2 = _interopRequireDefault(_layout);
 
-var _constants = __webpack_require__(65);
+var _constants = __webpack_require__(66);
 
 var _constants2 = _interopRequireDefault(_constants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _angular2.default.module('app', [_angularUiRouter2.default, _angularUiBootstrap2.default, _layout2.default, _constants2.default]).config(function ($stateProvider) {
+
     var states = [{
+        name: 'Home',
+        url: '/',
+        component: 'lzHome'
+    }, {
         name: 'Contact',
         url: '/contact',
         component: 'lzContact'
@@ -18936,7 +18954,7 @@ _angular2.default.module('app', [_angularUiRouter2.default, _angularUiBootstrap2
 });
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18947,7 +18965,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.headerComponent = undefined;
 
-var _header = __webpack_require__(107);
+var _header = __webpack_require__(110);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -18967,7 +18985,7 @@ var headerComponent = exports.headerComponent = {
 };
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18977,7 +18995,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _header = __webpack_require__(97);
+var _header = __webpack_require__(98);
 
 var _header2 = __webpack_require__(58);
 
@@ -18988,7 +19006,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = angular.module('layout.header', []).controller('headerCtrl', _header3.default).component('lzHeader', _header.headerComponent).name;
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19003,7 +19021,7 @@ var _about = __webpack_require__(59);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _about3 = __webpack_require__(108);
+var _about3 = __webpack_require__(111);
 
 var _about4 = _interopRequireDefault(_about3);
 
@@ -19016,7 +19034,7 @@ var aboutComponent = exports.aboutComponent = {
 };
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19026,7 +19044,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _about = __webpack_require__(99);
+var _about = __webpack_require__(100);
 
 var _about2 = __webpack_require__(59);
 
@@ -19037,7 +19055,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = angular.module('layout.navigation.about', []).controller('aboutCtrl', _about3.default).component('lzAbout', _about.aboutComponent).name;
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19048,7 +19066,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.contactComponent = undefined;
 
-var _contact = __webpack_require__(109);
+var _contact = __webpack_require__(112);
 
 var _contact2 = _interopRequireDefault(_contact);
 
@@ -19065,7 +19083,7 @@ var contactComponent = exports.contactComponent = {
 };
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19075,7 +19093,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _contact = __webpack_require__(101);
+var _contact = __webpack_require__(102);
 
 var _contact2 = __webpack_require__(60);
 
@@ -19083,25 +19101,59 @@ var _contact3 = _interopRequireDefault(_contact2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//export default angular.module('layout.navigation.contact', [])
-//    .config(function($stateProvider){
-//        'ngInject';
-//        var state = {
-//            state: 'Contact',
-//            config: {
-//                template: template,
-//                url: '/contact',
-//                title: 'Contact'
-//            }
-//        }
-//        $stateProvider.state(state.state, state.config);
-//    })
-//    .name;
-
 exports.default = angular.module('layout.navigation.contact', []).controller('contactCtrl', _contact3.default).component('lzContact', _contact.contactComponent).name;
 
 /***/ }),
-/* 103 */
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.homeComponent = undefined;
+
+var _home = __webpack_require__(113);
+
+var _home2 = _interopRequireDefault(_home);
+
+var _home3 = __webpack_require__(61);
+
+var _home4 = _interopRequireDefault(_home3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var homeComponent = exports.homeComponent = {
+    bindings: {},
+    template: _home2.default,
+    controller: _home4.default
+};
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _home = __webpack_require__(104);
+
+var _home2 = __webpack_require__(61);
+
+var _home3 = _interopRequireDefault(_home2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = angular.module('layout.navigation.home', []).component('lzHome', _home.homeComponent).controller('homeCtrl', _home3.default).name;
+
+/***/ }),
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19112,11 +19164,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.navigationComponent = undefined;
 
-var _navigation = __webpack_require__(110);
+var _navigation = __webpack_require__(114);
 
 var _navigation2 = _interopRequireDefault(_navigation);
 
-var _navigation3 = __webpack_require__(61);
+var _navigation3 = __webpack_require__(62);
 
 var _navigation4 = _interopRequireDefault(_navigation3);
 
@@ -19129,7 +19181,7 @@ var navigationComponent = exports.navigationComponent = {
 };
 
 /***/ }),
-/* 104 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19139,26 +19191,30 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _navigation = __webpack_require__(103);
+var _navigation = __webpack_require__(106);
 
-var _navigation2 = __webpack_require__(61);
+var _navigation2 = __webpack_require__(62);
 
 var _navigation3 = _interopRequireDefault(_navigation2);
 
-var _contact = __webpack_require__(102);
+var _contact = __webpack_require__(103);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _about = __webpack_require__(100);
+var _about = __webpack_require__(101);
 
 var _about2 = _interopRequireDefault(_about);
 
+var _home = __webpack_require__(105);
+
+var _home2 = _interopRequireDefault(_home);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = angular.module('layout.navigation', [_contact2.default, _about2.default]).controller('navigationCtrl', _navigation3.default).component('lzNavigation', _navigation.navigationComponent).name;
+exports.default = angular.module('layout.navigation', [_contact2.default, _about2.default, _home2.default]).controller('navigationCtrl', _navigation3.default).component('lzNavigation', _navigation.navigationComponent).name;
 
 /***/ }),
-/* 105 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19172,7 +19228,7 @@ var states = exports.states = {
 };
 
 /***/ }),
-/* 106 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19182,33 +19238,39 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _states = __webpack_require__(105);
+var _states = __webpack_require__(108);
 
 exports.default = angular.module('widget.constants.states', []).constant('states', _states.states).name;
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>{{ $ctrl.name }}</h1>\r\n\r\n";
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n<div class=\"about-body\">\r\n    <h1>About</h1>\r\n</div>\r\n";
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1>contact page</h1>\r\n";
 
 /***/ }),
 /* 110 */
 /***/ (function(module, exports) {
 
-module.exports = "<!--<a ui-sref=\"Contact\">Contact</a>\r\n<a ui-sref=\"About\">Contact</a>\r\n<h1>{{$ctrl.name}}</h1>\r\n<ui-view></ui-view>-->\r\n\r\n<!--<div ng-repeat=\"navItem in $ctrl.navItems\">\r\n    <a ui-sref=\"{{navItem}}\">{{navItem}}</a>\r\n</div>-->\r\n\r\n<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n    <div class=\"navbar-header\">\r\n        <button type=\"button\" class=\"navbar-toggle\" ng-click=\"isNavCollapsed = !isNavCollapsed\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n        </button>\r\n        <a class=\"navbar-brand\" href=\"#\">Resume</a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse\" uib-collapse=\"isNavCollapsed\">\r\n        <ul class=\"nav navbar-nav\" ng-repeat=\"navItem in $ctrl.navItems\">\r\n            <li><a ui-sref=\"{{navItem}}\">{{navItem}}</a></li>\r\n        </ul>\r\n    </div>\r\n</nav>";
+module.exports = "<h1><a ui-sref=\"Home\">Resume</a></h1>\r\n\r\n";
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div class=\"about-body\" id=\"about\">\r\n    <h1>About</h1>\r\n</div>\r\n";
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\" id=\"contact\">\r\n    <div class=\"row\">\r\n        <form>\r\n            <div class=\"form-group\">\r\n                <input type=\"text\" placeholder=\"Name\" required />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input type=\"email\" placeholder=\"Email\" required />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <textarea name=\"comments\" placeholder=\"Message\" required></textarea>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input type=\"submit\" value=\"Get in Contact!\" />\r\n            </div>\r\n        </form>\r\n    </div>\r\n</div>\r\n\r\n";
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <p>Welcome to my homegrown resume sight. I know LinkedIn is for the cool kids so I'll provide my LinkedIn profile but please check out my cool projects!</p>\r\n</div>\r\n";
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n    <div class=\"navbar-header\">\r\n        <button type=\"button\" class=\"navbar-toggle\" ng-click=\"isNavCollapsed = !isNavCollapsed\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n        </button>\r\n        <a class=\"navbar-brand\" ui-sref=\"Home\">Tam Mai</a>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse push-right\" uib-collapse=\"isNavCollapsed\">\r\n        <ul class=\"nav navbar-nav\" ng-repeat=\"navItem in $ctrl.navItems\">\r\n            <li><a ui-sref=\"{{navItem}}\">{{navItem}}</a></li>\r\n        </ul>\r\n    </div>\r\n</nav>";
 
 /***/ })
-],[96]);
+],[97]);
