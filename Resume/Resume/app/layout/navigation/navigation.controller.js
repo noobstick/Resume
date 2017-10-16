@@ -1,4 +1,4 @@
-﻿export default function navigationCtrl($state, states){
+﻿export default function navigationCtrl($state, states, $rootScope){
     'ngInject';
 
     var $ctrl = this;
@@ -7,4 +7,10 @@
 
     $ctrl.state = $state;
     $ctrl.navItems = states.mainNav;
+
+    $rootScope.$on('$stateChangeStart', function () {
+        var stateTemp = $state;
+        var statetestplz = 'test';
+        console.log('test');
+    })
 };

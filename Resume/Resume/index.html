@@ -1,19 +1,34 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
+
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBD_Lxp-2PTw09AqJUnEs24neZMMgYm4V4",
+            authDomain: "tamstash-61428.firebaseapp.com",
+            databaseURL: "https://tamstash-61428.firebaseio.com",
+            projectId: "tamstash-61428",
+            storageBucket: "",
+            messagingSenderId: "321492235779"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script src="assets/js/vendor.bundle.js"></script>
     <script src="assets/js/app.bundle.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet"/>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+
 <body layout="column">
-    <!--<lz-header></lz-header>-->
     <lz-navigation layout="row"></lz-navigation>
-    <lz-home></lz-home>
-    <lz-contact></lz-contact>
-    <lz-about></lz-about>
-    <ui-view ng-cloak layout="column"></ui-view>
+    <div class="main-container">
+        <ui-view ng-cloak layout="column"></ui-view>
+    </div>
 </body>
+
 </html>

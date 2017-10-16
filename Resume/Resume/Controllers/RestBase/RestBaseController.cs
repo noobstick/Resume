@@ -15,9 +15,9 @@ namespace Resume.Controllers.RestBase
             _httpClient = new HttpClient();
         }
 
-        public Task<T> PostToApi() {
-            var response = await _httpClient.PostAsync<Task<T>>('sdfsfsdf').Result.Content;
-            return response;
-        }
+        //public Task<T> PostToApi() {
+        //    var response = await _httpClient.PostAsync<Task<T>>('sdfsfsdf').Result.Content.ReadAsStringAsync();
+        //    return response;
+        //}
     }
 }

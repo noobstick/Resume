@@ -2,6 +2,7 @@
 const webpack = require('webpack');
 //var nodeModulesDir = path.resolve(__dirname, './node_modules');
 module.exports = {
+
     context: path.resolve(__dirname + '/app'),
     entry:  {
         app: './app.module.js',
@@ -17,6 +18,7 @@ module.exports = {
             filename: 'vendor.bundle.js'
         })
     ],
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
