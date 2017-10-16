@@ -11,7 +11,9 @@ angular.module('app', [
     bootstrap,
     layout,
     widgets
-]).config(function($stateProvider){
+]).config(function($stateProvider, $locationProvider){
+
+    //$locationProvider.hashPrefix('');
 
     var states = [
         {
@@ -34,4 +36,4 @@ angular.module('app', [
     states.forEach(function(state){
         $stateProvider.state(state)            
     });
-});
+    });

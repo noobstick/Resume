@@ -4,4 +4,6 @@
     var $ctrl = this;
 
     $ctrl.test = $state;
+
+    console.log('abbout test');
 }

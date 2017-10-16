@@ -1,3 +1,3 @@
 ﻿export const states = {
-    mainNav: ['Contact', 'About']
+    mainNav: ['Home','Contact', 'About']
 }

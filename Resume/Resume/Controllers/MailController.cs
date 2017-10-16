@@ -5,7 +5,7 @@ using System.Web.Http;
 namespace Resume.Controllers
 {
     [RoutePrefix("api/Mail")]
-    public class MailController : RestBaseController
+    public class MailController //: RestBaseController
     {
         public MailController() : base() { }
 
